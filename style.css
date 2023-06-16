@@ -1,0 +1,598 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --cor-padrao-texto: #464646;
+   --fonte-padrao-texto: 'Raleway';
+   --cor-da-coluna: #EAF2FD;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: var(--fonte-padrao-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+    color: var(--cor-padrao-texto);
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-padrao-texto);
+}
+
+.icone__title {
+    position: static;
+    padding-left: 4rem;
+    padding-right: 1rem;
+}
+.menu {
+    display: flex;
+    margin: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu__title {
+    display: inline;
+    width: 102px;
+    height: 19px;
+    font-family: var(--fonte-padrao-texto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--cor-padrao-texto);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+}
+nav {
+    position: absolute;
+    top: auto;
+    right: 100px;
+}
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    color: var(--fonte-padrao-texto);
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.menu__list {
+    display: flex;
+    padding-right: 10rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title__profile {
+    margin-left: 50px;
+    width: 20%;
+    
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__bio {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+    width: 751px;
+    height: 122px;
+}
+
+.title__subsection {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+    padding-top: 20px;
+}
+
+.title__network {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title__network__item {
+    padding: 20px;
+}
+
+.about {
+    background: var(--cor-da-coluna);
+    color: var(--cor-padrao-texto);
+    padding: 50px;
+}
+
+.about__container {
+    display: inline;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.about__title {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+
+.about__paragraph {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+    margin-left: 50px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills__title {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor-padrao-texto);
+}
+
+.skills__line {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+}
+
+.skills__img {
+    width: 24px;
+    height: 37px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+}
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies__title {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor-padrao-texto);
+}
+
+.hobbies__line {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
+.academic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 581px;
+    background: var(--cor-da-coluna);
+}
+
+.academic__title {
+    display: inline;
+    font-family: var(--fonte-padrao-texto);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor-padrao-texto);
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.academic__courses__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    width: 368px;
+    height: 286px;
+}
+
+.academic__courses__list {
+    display: inline-block;
+    align-items: center;
+}
+.academic__courses__item__img {
+    position: static;
+    padding-left: 50px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience__section__title {
+    width: 364px;
+    height: 38px;
+    text-align: center;
+    font-family: var(--fonte-padrao-texto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--cor-padrao-texto);
+}
+
+.experiencie__box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.experiencie__box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.experiencie__box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+
+.experience__info {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);    
+}
+
+.experience__text {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+
+}
+
+.experience__repo, .experience__demo {
+   display: inline-block;
+}
+
+.experiencia__botao--repo {
+    padding: 15px;
+    border-color: #2A7AE4;
+    color: #2A7AE4;
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.experiencia__botao--demo {
+    height: 51px;
+    width: 105px;
+    left: 132px;
+    padding: 16px;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+    text-align: center;
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.formcontato {
+    display: inline;
+    background-color: #EAF2FD;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF2FD;
+    padding-bottom: 5rem;
+}
+
+.formcontato--esquerda {
+    display: flex;
+}
+
+.formcontato__text {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.formcontato__title{
+    font-family: var(--fonte-padrao-texto);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+}
+
+.formcontato__subtext {
+    font-family: var(--fonte-padrao-texto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-padrao-texto);
+
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formcontato__input, .formcontato__textarea {
+    width: 656px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    border: none;
+}
+
+.formcontato__botao {
+    height: 51px;
+    width: 165px;
+    left: 0px;
+    top: 545px;
+    border-radius: 0px;
+    padding: 16px;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    font-family: var(--fonte-padrao-texto);
+    font-size: 15px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+section.menu{
+    
+}
+
+/*Sessão Title*/
+
+section.title{
+
+}
+
+/*Sessão About*/
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
